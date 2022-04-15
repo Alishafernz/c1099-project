@@ -1,0 +1,16 @@
+Mean of this data is 69.169
+Meadian of this data is 70.0
+Mode of this data is 72
+Standard deviation of this data is 14.60091937252216
+66.4% of data lies within 1 standard deviation
+95.4% of data lies within 2 standard deviation
+99.6% of data lies within 3 standard deviation
+
+first_std_deviation_start, first_std_deviation_end = mean-std_deviation, mean+std_deviation
+second_std_deviation_start, second_std_deviation_end = mean-(2*std_deviation),mean+(2*std_deviation)
+third_std_deviation_start, third_std_deviation_end = mean-(3*std_deviation),mean+(3*std_deviation)
+
+thin_1_std_devaiation = [result for result in data if result > first_std_deviation_start and result < first_std_deviation_end]
+thin_2_std_devaiation = [result for result in data if result > second_std_deviation_start and result < first_std_deviation_end]
+thin_3_std_devaiation = [result for result in data if result > third_std_deviation_start and result < first_std_deviation_end]
+
